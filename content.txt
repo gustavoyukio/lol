@@ -1,0 +1,28 @@
+principal:
+    - slider de novidades (Estilo o primeiro - http://www.kyrielles.net/sliderkit/demos/news-sliders.html)
+    - News (máx 5)
+    - Imagem e chamada para os prêmios da aposta
+    - VoDs (3 colunas)
+    - Rifa (slider com as que estão para finalizar)
+
+aside:
+    - User (Nome / Msgs / Notificações / Sair)
+    - Fails (Top 10)
+    - Free Week (8 champs)
+    - Live Stream (10 com mais acessos)
+    - (Advs)
+    - Streams (top 10 streamers)
+    - Betting Top 3
+    - Poll
+    - Social (Se tiver)
+
+
+
+
+$('.pre-header').css('-webkit-transition', 'none');
+$('.pre-header article').not('.slide-login').css('display', 'none');
+
+$('.slide-login').on('click', function(slideDown) {
+$(this).prev('article').slideToggle();
+slideDown.preventDefault();
+});
