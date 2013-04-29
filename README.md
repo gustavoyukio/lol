@@ -1,4 +1,7 @@
-lol
-===
+Projeto LoL Foundation
 
-Site about the game League of Legends, we're gonna be a hub for this game
+=================================
+Hub about League of Legends Game
+=================================
+
+Videos, streams, discussion, tactics and more.
