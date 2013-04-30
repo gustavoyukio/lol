@@ -33,8 +33,17 @@ placeholder = {
 // Doc ready
 $(function(){
 
-    // Nice scroll - comentado porque estava me irritando
+    // Nice scroll - comentado porque tava me irritando
     // $("body").niceScroll();
+
+    // Esconde caixa de login para slide
+    $('.pre-header article').not('.slide-login').css('display', 'none');
+
+    // Login slide
+    $('.slide-login').on('click', function(slideDown) {
+        $(this).prev('article').slideToggle();
+        slideDown.preventDefault();
+    });
 
     // Only IE
     if (navigator.userAgent.match("MSIE")) {

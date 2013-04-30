@@ -15,24 +15,36 @@ textarea {
   /*background: #02050c;*/
   /*color: #f9f9f9;*/
   color: #222222;
-  font: normal 100% "Arial";
+  font-family: 'Noto Sans';
+  font-size: 100%;
+  font-weight: 400;
 }
 * {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
-  -webkit-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
 }
 body {
-  font: normal 100% "Arial";
+  background: #02050c;
+  color: #f9f9f9;
+  font-family: 'Noto Sans';
+  font-size: 100%;
+  font-weight: 400;  
   line-height: 1.6875;
 }
+
+a, a:visited, a:focus {
+  color: #d8b006;
+  text-decoration: none;
+}
+
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
@@ -62,6 +74,45 @@ fieldset {
   margin: 0;
   padding: 0;
 }
+
+input, select, textarea {
+  background: #212d40;
+  border: 1px solid #02050c;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-box-shadow: inset hoff voff blur color;
+  -moz-box-shadow: inset hoff voff blur color;
+  box-shadow: inset hoff voff blur color;
+  color: #d8b006;
+  outline: none;
+  padding: 5px !important;
+  width: 100%;
+  transition: all 0.25s linear !important;
+  -o-transition: all 0.25s linear !important;
+  -ms-transition: all 0.25s linear !important;
+  -moz-transition: all 0.25s linear !important;
+  -webkit-transition: all 0.25s linear !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  box-shadow: 0px 0px 10px 1px #d8b006;
+  -o-box-shadow: 0px 0px 10px 1px #d8b006;
+  -ms-box-shadow: 0px 0px 10px 1px #d8b006;
+  -moz-box-shadow: 0px 0px 10px 1px #d8b006;
+  -webkit-box-shadow: 0px 0px 10px 1px #d8b006;
+}
+
+::-webkit-input-placeholder {color: #d8b006;}
+:-moz-placeholder {color: #d8b006;}
+::-moz-placeholder {color: #d8b006;}
+:-ms-input-placeholder {color: #d8b006;}
+
+input:focus, select:focus, textarea:focus {
+}
+
 textarea {
   resize: vertical;
 }
@@ -72,7 +123,7 @@ textarea {
   padding: 0.2em 0;
 }
 
-/*mus be erased*/
+/*must be erased*/
 video {border: 1px solid #999;}
 dl, dd, dt {margin: 0; padding: 0;}
 header, dt {background-color: #eee;}
@@ -240,14 +291,92 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   float: right !important;
 }
 /* ==========================================================================
-   $Author:     Name
-   $create at:  00/00/2013
+   $Author:     Júlio Gori Corradi
+   $create at:  30/04/2013
 ========================================================================== */
+
+.pre-headerTop, .pre-header {
+  background: #295ea0;
+}
+.pre-headerTop {height: 10px;}
+
+.pre-header * {
+  transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+.pre-header {
+  border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  padding: 0 15px;
+}
+
+.pre-header input[type="text"] {margin-right: 10px;}
+
+.pre-header a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.pre-header a i {
+  margin-left: 7px;
+  transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+}
+.pre-header a:hover i {background-position: 2px center;}
+
 
 #principal {text-align: center;}
 #principal ol, #principal li {margin: 0 !important; padding: 0 !important;}
 #principal li {display: inline-block;}
 
+.btn {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #faca1e), color-stop(1, #bd9907) );
+  background:-moz-linear-gradient( center top, #faca1e 5%, #bd9907 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faca1e', endColorstr='#bd9907');
+  background-color:#faca1e;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  border:1px solid #bf9a07;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  color:#f9f9f9;
+  display:inline-block;
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:1px 1px 0px #544507;
+}
+.btn:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bd9907), color-stop(1, #faca1e) );
+  background:-moz-linear-gradient( center top, #bd9907 5%, #faca1e 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bd9907', endColorstr='#faca1e');
+  background-color:#bd9907;
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}
+
+/*========== Icons ==========*/
+.icon {
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.icon.icon-login{ background-image: url(../img/icon-login.png); width: 14px; height: 12px;}
 
 /* ==========================================================================
    Media Queries

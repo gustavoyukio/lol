@@ -19,10 +19,9 @@ aside:
 
 
 
-$('.pre-header').css('-webkit-transition', 'none');
 $('.pre-header article').not('.slide-login').css('display', 'none');
 
 $('.slide-login').on('click', function(slideDown) {
-$(this).prev('article').slideToggle();
-slideDown.preventDefault();
+	$(this).prev('article').slideToggle();
+	slideDown.preventDefault();
 });
