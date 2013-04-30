@@ -32,7 +32,7 @@ textarea {
   -webkit-transition: all 0.25s ease-in;
 }
 body {
-  background: #02050c;
+  background: #02050c url(../img/bg-ahri.jpg) center -15px no-repeat;
   color: #f9f9f9;
   font-family: 'Noto Sans';
   font-size: 100%;
@@ -88,8 +88,7 @@ input, select, textarea {
   box-shadow: inset hoff voff blur color;
   color: #d8b006;
   outline: none;
-  padding: 5px !important;
-  width: 100%;
+  padding: 3px 5px !important;
   transition: all 0.25s linear !important;
   -o-transition: all 0.25s linear !important;
   -ms-transition: all 0.25s linear !important;
@@ -126,7 +125,7 @@ textarea {
 /*must be erased*/
 video {border: 1px solid #999;}
 dl, dd, dt {margin: 0; padding: 0;}
-header, dt {background-color: #eee;}
+dt {background-color: #eee;}
 
 /* ==========================================================================
 /* $Sticky Footer
@@ -212,6 +211,9 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
 .c4 {
   width: 33.33%;
 }
+.c4-5 {
+  width: 39.5%;
+}
 .c5 {
   width: 41.66%;
 }
@@ -295,50 +297,9 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
    $create at:  30/04/2013
 ========================================================================== */
 
-.pre-headerTop, .pre-header {
-  background: #295ea0;
-}
-.pre-headerTop {height: 10px;}
-
-.pre-header * {
-  transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  -moz-transition: none;
-  -webkit-transition: none;
-}
-
-.pre-header {
-  border-radius: 0 0 4px 4px;
-  -o-border-radius: 0 0 4px 4px;
-  -ms-border-radius: 0 0 4px 4px;
-  -moz-border-radius: 0 0 4px 4px;
-  -webkit-border-radius: 0 0 4px 4px;
-  padding: 0 15px;
-}
-
-.pre-header input[type="text"] {margin-right: 10px;}
-
-.pre-header a {
-  color: #f9f9f9;
-  text-decoration: none;
-}
-
-.pre-header a i {
-  margin-left: 7px;
-  transition: all 0.25s ease-in;
-  -o-transition: all 0.25s ease-in;
-  -ms-transition: all 0.25s ease-in;
-  -moz-transition: all 0.25s ease-in;
-  -webkit-transition: all 0.25s ease-in;
-}
-.pre-header a:hover i {background-position: 2px center;}
-
-
-#principal {text-align: center;}
-#principal ol, #principal li {margin: 0 !important; padding: 0 !important;}
-#principal li {display: inline-block;}
-
+/* =============================================
+   $Geral
+============================================= */
 .btn {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #faca1e), color-stop(1, #bd9907) );
   background:-moz-linear-gradient( center top, #faca1e 5%, #bd9907 100% );
@@ -348,10 +309,13 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
   border:1px solid #bf9a07;
-  border-radius:6px;
-  -moz-border-radius:6px;
-  -webkit-border-radius:6px;
+  border-radius:4px;
+  -o-border-radius:4px;
+  -ms-border-radius:4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
   color:#f9f9f9;
+  cursor: pointer;
   display:inline-block;
   font-family: 'Noto Sans';
   font-weight: 700;
@@ -369,6 +333,131 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   position:relative;
   top:1px;
 }
+
+/* =============================================
+   $pre-header
+============================================= */
+.pre-headerTop, .pre-header {
+  background: #295ea0;
+}
+.pre-headerTop {height: 10px;}
+
+.pre-header-wrap {position: relative;}
+
+.pre-header * {
+  transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+.pre-header {
+  border-radius: 0 0 4px 4px;
+  -o-border-radius: 0 0 4px 4px;
+  -ms-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  margin-top: -5px;
+  padding: 0 15px;
+  position: absolute;
+}
+
+.pre-header a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.pre-header a.login {
+  display: block;
+  font-size: 90%;
+  text-align: right;
+}
+
+.pre-header a i {
+  margin-left: 7px;
+  transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  -ms-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -webkit-transition: all 0.25s ease-in;
+}
+.pre-header a:hover i {background-position: 2px center;}
+
+/* =============================================
+   $header
+============================================= */
+#top {
+  background: url(../img/bg-menu.png) center top no-repeat;
+  box-shadow: 0px 0px 10px 5px #000;
+  -o-box-shadow: 0px 0px 10px 5px #000;
+  -ms-box-shadow: 0px 0px 10px 5px #000;
+  -moz-box-shadow: 0px 0px 10px 5px #000;
+  -webkit-box-shadow: 0px 0px 10px 5px #000;
+  height: 70px;
+  margin-top: 160px;
+  position: relative;
+}
+
+.principal {
+  line-height: 70px;
+  margin: 0;
+  padding:0;
+  text-align: center;
+}
+
+.principal li {display: inline-block; margin: 0 7.74%; padding: 0;}
+
+.principal li a:hover {
+  text-shadow:-3px -2px 6px rgba(239, 291, 47, 0.5), 3px -2px 6px rgba(239, 291, 47, 0.5), 3px 2px 6px rgba(239, 291, 47, 0.5), -1px 2px 6px rgba(239, 291, 47, 0.5);  
+  -o-text-shadow:-3px -2px 6px rgba(239, 291, 47, 0.5), 3px -2px 6px rgba(239, 291, 47, 0.5), 3px 2px 6px rgba(239, 291, 47, 0.5), -1px 2px 6px rgba(239, 291, 47, 0.5);  
+  -ms-text-shadow:-3px -2px 6px rgba(239, 291, 47, 0.5), 3px -2px 6px rgba(239, 291, 47, 0.5), 3px 2px 6px rgba(239, 291, 47, 0.5), -1px 2px 6px rgba(239, 291, 47, 0.5);  
+  -moz-text-shadow:-3px -2px 6px rgba(239, 291, 47, 0.5), 3px -2px 6px rgba(239, 291, 47, 0.5), 3px 2px 6px rgba(239, 291, 47, 0.5), -1px 2px 6px rgba(239, 291, 47, 0.5);  
+  -webkit-text-shadow:-3px -2px 6px rgba(239, 291, 47, 0.5), 3px -2px 6px rgba(239, 291, 47, 0.5), 3px 2px 6px rgba(239, 291, 47, 0.5), -1px 2px 6px rgba(239, 291, 47, 0.5);
+}
+a #logo {
+  background-image: url(../img/sprite-logo.png);
+  display: inline-block;
+  height: 184px;
+  text-indent: -9999px;
+  position: absolute;
+  top: -92px;
+  width: 268px;
+  animation: play 2s steps(2) infinite;
+  -o-animation: play 2s steps(2) infinite;
+  -ms-animation: play 2s steps(2) infinite;
+  -moz-animation: play 2s steps(2) infinite;
+  -webkit-animation: play 2s steps(2) infinite;
+}
+
+@keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -536px; }
+}
+
+@-o-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -536px; }
+}
+
+@-ms-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -536px; }
+}
+
+@-moz-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -536px; }
+}
+
+
+@-webkit-keyframes play {
+   from { background-position:    0px; }
+     to { background-position: -536px; }
+}
+
+
+a:hover #logo {background: url(../img/sprite-logo.png) right top no-repeat;}
 
 /*========== Icons ==========*/
 .icon {
@@ -390,6 +479,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   .row .row .c2,
   .row .row .c3,
   .row .row .c4,
+  .row .row .c4-5,
   .row .row .c5,
   .row .row .c6,
   .row .row .c7,
@@ -412,7 +502,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
 /* =Media query for iPad and tablets
 -------------------------------------------------------------- */
 
-@media handheld, only screen and (max-width: 768px), only screen and (max-device-width: 768px) and (orientation: portrait) {
+@media handheld, only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) and (orientation: portrait) {
   body {
     font-size: 90%;
   }
@@ -423,6 +513,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   .c2,
   .c3,
   .c4,
+  .c4-5,
   .c5,
   .c6,
   .c7,
@@ -453,6 +544,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   .c2,
   .c3,
   .c4,
+  .c4-5,
   .c5,
   .c6,
   .c7,
