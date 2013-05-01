@@ -32,7 +32,7 @@ textarea {
   -webkit-transition: all 0.25s ease-in;
 }
 body {
-  background: #02050c url(../img/bg-ahri.jpg) center -15px no-repeat;
+  background: #02050c url(../img/bg-ahri.png) center -5px no-repeat;
   color: #f9f9f9;
   font-family: 'Noto Sans';
   font-size: 100%;
@@ -361,6 +361,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   margin-top: -5px;
   padding: 0 15px;
   position: absolute;
+  z-index: 999;
 }
 
 .pre-header a {
