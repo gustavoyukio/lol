@@ -36,14 +36,22 @@ $(function(){
     // Nice scroll - comentado porque tava me irritando
     // $("body").niceScroll();
 
-    // Esconde caixa de login para slide
-    $('.pre-header article').not('.slide-login').css('display', 'none');
-
     // Login slide
-    $('.slide-login').on('click', function(slideDown) {
+    $('.slide-login').on('click', function(slideLogin) {
         $(this).prev('article').slideToggle();
-        slideDown.preventDefault();
+        slideLogin.preventDefault();
     });
+
+    if ( $('aside dl dt') ) {
+        $('aside dl dt a').on('click', function(slide) {
+            // toggle minus/plus icons
+            $(this).find('i').toggleClass('icon-plus');
+            // slide up/down the next <dd>
+            $(this).parent().next().slideToggle();
+            // prent default action
+            slide.preventDefault();
+        });
+    };
 
     // Only IE
     if (navigator.userAgent.match("MSIE")) {

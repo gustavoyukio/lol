@@ -115,6 +115,9 @@ input:focus, select:focus, textarea:focus {
 textarea {
   resize: vertical;
 }
+
+dl, dd, dt {margin: 0; padding: 0;}
+
 .chromeframe {
   background: #cccccc;
   color: black;
@@ -124,8 +127,6 @@ textarea {
 
 /*must be erased*/
 video {border: 1px solid #999;}
-dl, dd, dt {margin: 0; padding: 0;}
-dt {background-color: #eee;}
 
 /* ==========================================================================
 /* $Sticky Footer
@@ -361,6 +362,7 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   margin-top: -5px;
   padding: 0 15px;
   position: absolute;
+  z-index: 99;
 }
 
 .pre-header a {
@@ -459,13 +461,70 @@ a #logo {
 
 a:hover #logo {background: url(../img/sprite-logo.png) right top no-repeat;}
 
-/*========== Icons ==========*/
+/* =============================================
+   $aside
+============================================= */
+
+aside dl dd {
+  transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+dl {
+  background: #212d40;
+  border: 1px solid #d8b006;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px #000;
+  -o-box-shadow: 0px 0px 10px 5px #000;
+  -ms-box-shadow: 0px 0px 10px 5px #000;
+  -moz-box-shadow: 0px 0px 10px 5px #000;
+  -webkit-box-shadow: 0px 0px 10px 5px #000;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+dt {
+  background: #02050c;
+  border-radius: 4px 4px 0 0;
+}
+
+dt a {display: block; text-align: center;}
+dt a i {margin: 3px 5px 0 0;}
+
+dd ol {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+}
+
+dd ol li a {color: #f9f9f9 !important;}
+
+.user-area dd ol {
+  text-align: center;
+}
+.user-area dd ol li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* ==========================================================================
+   Icons
+========================================================================== */
 .icon {
   background-repeat: no-repeat;
   display: inline-block;
 }
 
 .icon.icon-login{ background-image: url(../img/icon-login.png); width: 14px; height: 12px;}
+.icon.icon-minus {background-image: url(../img/icon-minus.png); width: 21px; height: 21px;}
+.icon.icon-plus {background-image: url(../img/icon-plus.png); width: 21px; height: 21px;}
+
 
 /* ==========================================================================
    Media Queries
