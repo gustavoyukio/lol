@@ -54,19 +54,19 @@ a, a:visited, a:focus {
   text-shadow: none;
 }
 hr {
-  display: block;
-  height: 1px;
   border: 0;
   border-top: 1px solid #cccccc;
+  display: block;
+  height: 1px;
   margin: 1em 0;
   padding: 0;
 }
 img {
-  max-width: 100%;
-  height: auto;
+  border:1px solid #d8b006;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  height: auto;
+  margin: 0;
+  max-width: 100%;
   vertical-align: middle;
 }
 fieldset {
@@ -152,8 +152,8 @@ body:before {
   min-height: 100%;
 }
 div[role="main"] {
-   specific/* styler to footer wrapper here */
-  overflow: auto;
+  /*specific styler to footer wrapper here */
+  margin-top: 60px;
   padding-bottom: 150px;
 }
 /* padding-bottom must be same height as the footer */
@@ -301,15 +301,19 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
 /* =============================================
    $Geral
 ============================================= */
+
+/* ========== botões ========== */
+p {
+  font-size: 85%;
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
 .btn {
-  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #faca1e), color-stop(1, #bd9907) );
-  background:-moz-linear-gradient( center top, #faca1e 5%, #bd9907 100% );
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faca1e', endColorstr='#bd9907');
-  background-color:#faca1e;
   box-shadow:inset 0px 1px 0px 0px #ffffff;
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
   -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-  border:1px solid #bf9a07;
   border-radius:4px;
   -o-border-radius:4px;
   -ms-border-radius:4px;
@@ -324,16 +328,30 @@ footer > .wrapper {/* specific styler to footer wrapper here */}
   text-decoration:none;
   text-shadow:1px 1px 0px #544507;
 }
-.btn:hover {
+.btn:active {
+  position:relative;
+  top:1px;
+}
+
+.btn.gold {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #faca1e), color-stop(1, #bd9907) );
+  background:-moz-linear-gradient( center top, #faca1e 5%, #bd9907 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#faca1e', endColorstr='#bd9907');
+  background-color:#faca1e;
+  border:1px solid #bf9a07;
+}
+.btn.gold:hover {
   background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bd9907), color-stop(1, #faca1e) );
   background:-moz-linear-gradient( center top, #bd9907 5%, #faca1e 100% );
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bd9907', endColorstr='#faca1e');
   background-color:#bd9907;
 }
-.btn:active {
-  position:relative;
-  top:1px;
-}
+
+
+/* ========== cores ========== */
+
+.blue {color: #238fc0;}
+
 
 /* =============================================
    $pre-header
@@ -461,6 +479,75 @@ a #logo {
 
 a:hover #logo {background: url(../img/sprite-logo.png) right top no-repeat;}
 
+/* ==========================================================================
+   Main content
+========================================================================== */
+
+section.c8 .box {
+  background: #212d40;
+  border: 1px solid #d8b006;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px #000;
+  -o-box-shadow: 0px 0px 10px 5px #000;
+  -ms-box-shadow: 0px 0px 10px 5px #000;
+  -moz-box-shadow: 0px 0px 10px 5px #000;
+  -webkit-box-shadow: 0px 0px 10px 5px #000;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.highlightsSlider {background: #212d40;}
+.highlightsSlider img {border: none;}
+.highlightsSlider .c9 {width: 78%}
+.highlightsSlider .c3 {width: 22%}
+
+.highlightsSlider .c9 a {
+  display: block;
+  position: relative;
+}
+
+.highlightsSlider .c9 div {
+  background: rgba(0, 0, 0, 0.8);
+  bottom: 0px;
+  left: 0px;
+  padding: 7px;
+  position: absolute;
+}
+
+.highlightsSlider .c9 div h3 {margin: 0; padding: 0}
+.highlightsSlider .c9 div p {
+  color: #fff;
+  font-size: 95%;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.highlightsSlider .c9, .highlightsSlider .c3 {padding: 0 !important;}
+.highlightsSlider ul, .highlightsSlider ul li {list-style: none; margin: 0; padding: 0;}
+
+.highlightsSlider .c9 a img {height: auto; width: 100%;}
+
+.highlightsSlider ul li a {display: block; opacity: 0.5}
+.highlightsSlider ul li a:hover, .highlightsSlider ul li .on {opacity: 1}
+.highlightsSlider ul li a img{height: auto ;width: 100%;}
+
+.news header h3 {
+  background: #02050c url(../img/icon-shield.png) 15px center no-repeat;
+  color: #d8b006;
+  margin: 0;
+  padding: 10px 0 10px 55px;
+}
+
+.news .post {margin: 15px 0}
+.news .post .c6 {padding: 0 15px;}
+.news .post article h4 {color: #d8b006; margin: 0;padding: 0;}
+.news .post article p {margin: 0;padding: 0;}
+
 /* =============================================
    $aside
 ============================================= */
@@ -506,24 +593,82 @@ dd ol {
 
 dd ol li a {color: #f9f9f9 !important;}
 
+dd form li {
+font-size: 83%;
+text-align: justify;
+}
+
+dd form li input { margin:10px 5px;}
+
 .user-area dd ol {
   text-align: center;
 }
 .user-area dd ol li {
+  cursor: pointer;
   display: inline-block;
-  margin: 0 5px;
+  margin:0 5%;
+  text-align: center;
 }
+
+.user-area dd ol li i { margin: 0 auto;}
+.user-area dd ol li i .icon.icon-notify {
+  background-color: #f00;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  position: absolute;
+  font-size: 70%;
+  font-style: normal;
+  left: 70%;
+  min-width: 20px;
+  padding: 1px;
+  top: -5px;
+  width: 20px;
+}
+
+.top-fail dd ol {
+  list-style: decimal;
+}
+
+.free-week dd ol {text-align: center;}
+.free-week dd ol li {
+  display: inline-block;
+  height: 60px;
+  margin: 0 1%;
+  width: 60px;
+}
+.free-week dd ol li img {
+  border:1px solid #d8b006;
+  width: 100%;
+}
+
 /* ==========================================================================
    Icons
 ========================================================================== */
 .icon {
+  background-position: left top;
   background-repeat: no-repeat;
   display: inline-block;
+  position: relative;
 }
 
-.icon.icon-login{ background-image: url(../img/icon-login.png); width: 14px; height: 12px;}
-.icon.icon-minus {background-image: url(../img/icon-minus.png); width: 21px; height: 21px;}
-.icon.icon-plus {background-image: url(../img/icon-plus.png); width: 21px; height: 21px;}
+.icon.icon-coinAverage {background-image: url(../img/icon-coinAverage.png);background-position: right top;height: 18px;width: 26px}
+.icon.icon-coinCheap {background-image: url(../img/icon-coinCheap.png);background-position: right top;height: 18px;width: 26px}
+.icon.icon-coinExpensive {background-image: url(../img/icon-coinExpensive.png);background-position: right top;height: 18px;width: 26px}
+.icon.icon-login{ background-image: url(../img/icon-login.png); height: 12px; width: 14px;}
+.icon.icon-logout {background-image: url(../img/icon-logout.png); display: block; height: 32px; width: 32px;}
+li:hover .icon.icon-logout {background-image: url(../img/icon-logout.png); background-position: 2px top; display: block; height: 32px; width: 32px;}
+.icon.icon-minus {background-image: url(../img/icon-minus.png); height: 21px; width: 21px;}
+.icon.icon-msg {background-image: url(../img/icon-msg.png); display: block; height: 32px; width: 32px;}
+li:hover .icon.icon-msg {background-image: url(../img/icon-msg.png); display: block; height: 32px; width: 32px; transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg);}
+.icon.icon-notification {background-image: url(../img/icon-notification.png); display: block; height: 32px; width: 32px;}
+li:hover .icon.icon-notification {background-image: url(../img/icon-notification.png); display: block; height: 32px; transform: scale(1.1); -o-transform: scale(1.1); -ms-transform: scale(1.1); -moz-transform: scale(1.1); -webkit-transform: scale(1.1); width: 32px;}
+.icon.icon-plus {background-image: url(../img/icon-plus.png); height: 21px; width: 21px;}
+.icon.icon-sphere {border-radius: 50px;-o-border-radius: 50px;-ms-border-radius: 50px;-moz-border-radius: 50px;-webkit-border-radius: 50px; height: 10px; margin: 5px 5px 0 5px;width: 10px;}
+.icon.icon-sphere.green {background-color: #23c048;}
+.icon.icon-sphere.red {background-color: #c00902;}
 
 
 /* ==========================================================================
