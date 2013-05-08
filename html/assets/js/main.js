@@ -53,6 +53,46 @@ $(function(){
         });
     };
 
+    // highlightsSlider
+    if ('.highlightsSlider') {
+        var counter = 1;
+
+        $('.highlightsSlider aside ul li a').on('click', function(e) {
+            // prevent the default action
+            e.preventDefault();
+            // reset counter
+            var b = $(this).attr('href');
+            counter = b.substr(4);
+            // console.log(counter);
+            // console.log(b);
+            // remove all class="on"
+            $('.highlightsSlider aside ul li a').removeClass('on');
+            // add on this element class="on"
+            $(this).addClass('on');
+            // calls the attr of the a clicked
+            var click = $(this).attr('href');
+            $('.link').hide();
+            $(click).fadeIn();
+        });
+
+        setInterval(function() {
+            var a = $('.highlightsSlider aside ul li a');
+            a.removeClass('on');
+
+            var target = '#div' + counter;
+            a.closest('ul').find('a[href ='+target+']').addClass('on');
+
+            $('.link').hide();
+            
+            $('#div' + counter).fadeIn();
+            // count
+            counter++
+            // return to first view
+            if (counter == 5) { counter = 1 };
+            
+        }, 3000 );
+    };
+
     // Only IE
     if (navigator.userAgent.match("MSIE")) {
         // Placeholder

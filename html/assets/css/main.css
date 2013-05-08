@@ -32,7 +32,7 @@ textarea {
   -webkit-transition: all 0.25s ease-in;
 }
 body {
-  background: #02050c url(../img/bg-ahri.jpg) center -15px no-repeat;
+  background: #02050c url(../img/bg-ahri.png) center -15px no-repeat;
   color: #f9f9f9;
   font-family: 'Noto Sans';
   font-size: 100%;
@@ -505,10 +505,18 @@ section.c8 .box {
 .highlightsSlider .c9 {width: 78%}
 .highlightsSlider .c3 {width: 22%}
 
+.highlightsSlider .c9 * {
+  transtion: none;
+  -webkit-transtion: none;
+}
+
 .highlightsSlider .c9 a {
   display: block;
   position: relative;
 }
+
+.highlightsSlider .c9 .link { display: none;}
+.highlightsSlider .c9 .link:first-child { display: block;}
 
 .highlightsSlider .c9 div {
   background: rgba(0, 0, 0, 0.8);
