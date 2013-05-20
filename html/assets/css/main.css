@@ -556,6 +556,76 @@ section.c8 .box {
 .news .post article h4 {color: #d8b006; margin: 0;padding: 0;}
 .news .post article p {margin: 0;padding: 0;}
 
+.raffleSlider .c4 {padding: 0}
+
+.raffleSlider section {
+  border: 1px solid #d8b006;
+  border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  box-shadow: 0px 0px 10px 5px #000;
+  -o-box-shadow: 0px 0px 10px 5px #000;
+  -ms-box-shadow: 0px 0px 10px 5px #000;
+  -moz-box-shadow: 0px 0px 10px 5px #000;
+  -webkit-box-shadow: 0px 0px 10px 5px #000; 
+  display:block;
+  margin: 100px 0;
+  opacity: 0.4;
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+
+.raffleSlider section:hover {
+  transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  opacity: 1;
+  z-index: 2;
+}
+.raffleSlider section.on {
+  transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  opacity: 1;
+  z-index: 1;
+}
+
+.raffleSlider section a h4 {
+  background-color: rgba(2, 5, 12, 0.93);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -1px;
+  text-align: center;
+  width: 100%;
+}
+
+.raffleSlider section a article {
+  background-color: rgba(2, 5, 12, 0.93);
+  bottom: 0;
+  color: #f9f9f9;
+  position: absolute;
+  width: 100%;
+}
+.raffleSlider section a article p {
+  font-size: 80%;
+  text-align: center;
+}
+
+
+.raffleSlider section a img {border: 0}
+
 /* =============================================
    $aside
 ============================================= */

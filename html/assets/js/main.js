@@ -63,8 +63,6 @@ $(function(){
             // reset counter
             var b = $(this).attr('href');
             counter = b.substr(4);
-            // console.log(counter);
-            // console.log(b);
             // remove all class="on"
             $('.highlightsSlider aside ul li a').removeClass('on');
             // add on this element class="on"
@@ -77,19 +75,19 @@ $(function(){
 
         setInterval(function() {
             var a = $('.highlightsSlider aside ul li a');
+            // remove all class on
             a.removeClass('on');
-
+            // find the div usigin counter and add clas 'on'
             var target = '#div' + counter;
             a.closest('ul').find('a[href ='+target+']').addClass('on');
-
+            // hide all links
             $('.link').hide();
-            
+            // fade in
             $('#div' + counter).fadeIn();
             // count
             counter++
-            // return to first view
-            if (counter == 5) { counter = 1 };
-            
+            // return to first view (reset counter)
+            if (counter == 5) { counter = 1 };  
         }, 3000 );
     };
 
